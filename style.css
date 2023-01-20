@@ -1,0 +1,52 @@
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.main {
+    background-color: oldlace;
+    display: flex;
+}
+.picture {
+    display: flex;
+}
+.image{
+    width: 40vw;
+    object-fit: cover;
+    object-position: 25%;
+}
+.banner {
+    background-color: rgba(0, 0, 0, 0.331);
+    color: white;
+}
+.content {
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+.heading {
+    padding-top: 15vh;
+}
+.form {
+    padding-top: 5vh;
+}
+form {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 15vw 15vw;
+    grid-template-rows: 5vh 5vh 5vh;
+}
+.actions {
+    padding-top: 50px;
+}
+.already {
+    padding-top: 25px;
+}
+.first, .last, .email, .number, .password, .confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
