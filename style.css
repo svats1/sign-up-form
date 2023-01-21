@@ -4,6 +4,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .main {
     background-color: oldlace;
@@ -29,24 +30,48 @@ body {
 }
 .heading {
     padding-top: 15vh;
+    font-size: 24px;
+    font-weight: 600;
+}
+.formheading {
+    font-size: 24px;
+    font-weight: 600;
 }
 .form {
     padding-top: 5vh;
+}
+input {
+    width: 200px;
+    height: 50px;
 }
 form {
     padding-top: 50px;
     display: grid;
     grid-template-columns: 15vw 15vw;
     grid-template-rows: 5vh 5vh 5vh;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 800;
 }
 .actions {
     padding-top: 50px;
 }
 .already {
     padding-top: 25px;
+    font-size: 18px;
+    font-weight: 400;
 }
 .first, .last, .email, .number, .password, .confirm {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.createaccount {
+    background-color: orange;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
 }
