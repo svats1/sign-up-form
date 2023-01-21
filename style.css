@@ -7,7 +7,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .main {
-    background-color: oldlace;
+    background-color: rgb(144, 144, 144);
     display: flex;
 }
 .italic {
@@ -16,14 +16,22 @@ body {
 .picture {
     display: flex;
 }
-.image{
+.image {
     width: 40vw;
     object-fit: cover;
     object-position: 25%;
 }
 .banner {
-    background-color: rgba(0, 0, 0, 0.331);
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
+    position: absolute;
+    margin-top: 263px;
+    width: 40vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
 }
 .content {
     min-width: 600px;
@@ -44,18 +52,20 @@ body {
 }
 .form {
     margin-top: 4vh;
-    background-color: antiquewhite;
+    background-color: rgb(252, 183, 92);
     padding-left: 25px;
     padding-bottom: 3vh;
     box-shadow: 5px 5px 5px grey;
 }
 input {
     height: 40px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
     margin-top: 2px;
 }
 form {
-    padding-top: 50px;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 50px 50px 50px;
@@ -87,10 +97,11 @@ form {
     border-radius: 15px;
     font-size: 18px;
     font-weight: 600;
-    box-shadow: 0px 2px 2px grey;
+    box-shadow: 0px 1px 1px rgb(44, 44, 44);
 }
 .createaccount:active {
-    transform: translateY(1px);
+    /* transform: translateY(1px); */
+    transform: scale(0.99);
 }
 .createaccount:hover {
     background-color: rgb(243, 158, 0);
@@ -99,4 +110,7 @@ a {
     color: orange;
     text-decoration: none;
     font-weight: 600;
+}
+a:hover {
+    text-decoration: underline;
 }
