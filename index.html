@@ -19,40 +19,41 @@
                 <p class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <span class="italic">now</span> to get started.</p>
                 <p class="text">You <span class="italic">know</span> you want to.</p>
             </div>
-
-            <div class="form">
-                <div class="formheading">Let's do this!</div>
-                <form action="#">
-                    <div class="first">
-                        <label for="firstname">FIRST NAME</label>
-                        <input type="text" name="firstname" id="firstname">
+            <form action="#">
+                <div class="form">
+                    <div class="formheading">Let's do this!</div>
+                    <div class="grid">
+                        <div class="first">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" name="firstname" id="firstname" required placeholder="John">
+                        </div>
+                        <div class="last">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" name="lastname" id="lastname" required placeholder="Doe">
+                        </div>
+                        <div class="email">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required placeholder="johndoe@abc.com">
+                        </div>
+                        <div class="number">
+                            <label for="phonenumber">PHONE NUMBER</label>
+                            <input type="text" name="phonenumber" id="phonenumber" placeholder="000-123-9999">
+                        </div>
+                        <div class="password">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="confirm">
+                            <label for="confirmpassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmpassword" id="confirmpassword" required>
+                        </div>
                     </div>
-                    <div class="last">
-                        <label for="lastname">LAST NAME</label>
-                        <input type="text" name="lastname" id="lastname">
-                    </div>
-                    <div class="email">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="number">
-                        <label for="phonenumber">PHONE NUMBER</label>
-                        <input type="text" name="phonenumber" id="phonenumber">
-                    </div>
-                    <div class="password">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
-                    </div>
-                    <div class="confirm">
-                        <label for="confirmpassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmpassword" id="confirmpassword">
-                    </div>
-                </form>
-            </div>
-            <div class="actions">
-                <button class="createaccount">Create Account</button>
-                <div class="already">Already have an account? <a href="#">Log in</a></div>
-            </div>
+                </div>
+                <div class="actions">
+                    <button class="createaccount" type="submit">Create Account</button>
+                    <div class="already">Already have an account? <a href="#">Log in</a></div>
+                </div>
+            </form>
         </div>
     </div>
     <!-- <footer>svats.dev</footer> -->

@@ -1,5 +1,5 @@
 body {
-    background-color: grey;
+    background-color: rgb(201, 201, 201);
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -7,7 +7,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .main {
-    background-color: rgb(144, 144, 144);
     display: flex;
 }
 .italic {
@@ -31,9 +30,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 56px;
+    font-size: 44px;
+    letter-spacing: 22px;
 }
 .content {
+    background-image: linear-gradient(to bottom right, rgba(235, 235, 235, 1), rgba(0,0,0,0.5));
     min-width: 600px;
     display: flex;
     flex-direction: column;
@@ -52,7 +53,7 @@ body {
 }
 .form {
     margin-top: 4vh;
-    background-color: rgb(252, 183, 92);
+    background-color: rgb(255, 196, 119);
     padding-left: 25px;
     padding-bottom: 3vh;
     box-shadow: 5px 5px 5px grey;
@@ -63,8 +64,16 @@ input {
     color: rgb(0, 0, 0);
     border-radius: 5px;
     margin-top: 2px;
+    background-color: whitesmoke;
 }
-form {
+input::placeholder {
+    opacity: 0.4;
+}
+input:valid {
+    border-color: green;
+    border: 2px solid;
+}
+.grid {
     padding-top: 30px;
     display: grid;
     grid-template-columns: 300px 300px;
@@ -89,7 +98,7 @@ form {
     flex-direction: column;
 }
 .createaccount {
-    background-color: orange;
+    background-color: rgb(245, 168, 27);
     border: 0;
     color: white;
     width: 250px;
@@ -104,7 +113,7 @@ form {
     transform: scale(0.99);
 }
 .createaccount:hover {
-    background-color: rgb(243, 158, 0);
+    background-color: rgb(235, 160, 0);
 }
 a {
     color: orange;
